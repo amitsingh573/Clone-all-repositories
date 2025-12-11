@@ -1,0 +1,7 @@
+mkdir -p ~/github-backups
+cd ~/github-all
+
+for repo in */ ; do
+  name=$(basename "$repo")
+  tar -czf ~/github-backups/"$name".tar.gz "$repo"
+done
