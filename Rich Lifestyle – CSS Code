@@ -1,0 +1,47 @@
+.rich-life {
+    padding: 60px 15px;
+    background: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+.rich-life .container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.rich-life h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.rich-life .tagline {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.rich-life .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.rich-life .card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.rich-life .card:hover {
+    transform: translateY(-6px);
+}
+
+.rich-life .card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
