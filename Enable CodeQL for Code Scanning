@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"   # or "pip", "maven", etc.
+    directory: "/"             # root of your project
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore"
