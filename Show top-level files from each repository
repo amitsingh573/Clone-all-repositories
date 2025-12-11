@@ -1,0 +1,5 @@
+gh repo list amitsingh573 --limit 200 --json name --jq '.[].name' | while read name; do
+  echo "========== $name =========="
+  ls -1 "$name"
+  echo ""
+done
