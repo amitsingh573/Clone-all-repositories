@@ -1,0 +1,27 @@
+#!/bin/bash
+
+USER="amitsingh573"
+BASE="$HOME/github-all"
+BACKUP="$HOME/github-backups"
+
+mkdir -p "$BASE" "$BACKUP"
+cd "$BASE"
+
+echo "Fetching repositories..."
+REPOS=$(gh repo list "$USER" --limit 200 --ssh | awk '{print $1}')
+
+echo "Cloning repositories..."
+for repo in $REPOS; do
+  echo "Cloning $repo"
+  gh repo clone "$repo"
+done
+
+echo "Creating backups..."
+for repo in */ ; do
+  name=$(basename "$repo")
+  tar -czf "$BACKUP/$name.tar.gz" "$repo"
+done
+
+echo "Complete."
+echo "Repositories stored in: $BASE"
+echo "Backups stored in: $BACKUP"
