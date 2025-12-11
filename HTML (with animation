@@ -1,0 +1,28 @@
+<section class="rich-life animated">
+    <div class="container">
+        <h1 class="fade-in">Rich Lifestyle</h1>
+        <p class="tagline fade-in">Success • Discipline • Freedom</p>
+
+        <div class="grid">
+            <div class="card slide-up">
+                <h2>Mindset</h2>
+                <p>Focused decisions, long-term thinking, high-value habits.</p>
+            </div>
+
+            <div class="card slide-up delay-1">
+                <h2>Health</h2>
+                <p>Strength training, clean nutrition, disciplined routines.</p>
+            </div>
+
+            <div class="card slide-up delay-2">
+                <h2>Wealth</h2>
+                <p>Investing, brand building, multiple income channels.</p>
+            </div>
+
+            <div class="card slide-up delay-3">
+                <h2>Lifestyle</h2>
+                <p>Smart work, minimal stress, high productivity, growth.</p>
+            </div>
+        </div>
+    </div>
+</section>
